@@ -1,0 +1,751 @@
+body {
+    background-color: #ffffff; /* Light grey */
+}
+
+/* Styles for login and sign up pages */
+.login, .signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.loginmessage, .signupmessage {
+    text-align: center;
+    
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    
+}
+
+/* The login box with parchment background */
+
+.login-butto {
+    background: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    color: rgb(0, 0, 0) ; /* Ensure text is visible */
+    font-size: 18px;
+    font-family: papyrus;
+    font-weight: italic;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 50px;
+    z-index: 0;
+}
+
+input[type='email']::placeholder {
+    color: #000000; /* Red placeholder for email input */
+    border: none
+}
+input[type='password']::placeholder {
+    color: #000000; /* Green placeholder for password input */
+}
+input[type='username']::placeholder {
+    color: #000000; /* Green placeholder for password input */
+}
+input[type='text']::placeholder {
+    color: #000000; /* Red placeholder for email input */
+    font-family: papyrus;
+}
+.footer-image {
+    position: fixed; /* Keeps the image fixed at the bottom */
+    bottom: 0; /* Positions the image at the bottom of the viewport */
+    left: 50%; /* Centers the image horizontally */
+    transform: translateX(-50%); /* Adjusts for exact centering */
+    width: 100%; /* Adjust the width as needed */
+    height: 500px; /* Maintains aspect ratio */
+    z-index: -1; /* Ensures the image stays on top of other content */
+  }
+
+.crew-logo {
+width: 200px; /* Adjust the width as needed */
+height: auto; /* Maintain aspect ratio */
+vertical-align: middle; /* Align with the text */
+margin-right: 10px; /* Add spacing between the image and text */
+}
+
+.crew-logos {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align with the text */
+    margin-right: 10px; /* Add spacing between the image and text */
+    }
+  
+  
+  /* Define styles for the "Finder" part */
+.finder-text {
+color: rgb(0, 0, 0); /* Change to your desired color */
+font-family: papyrus;
+font-size: 4rem;
+text-align: center;
+vertical-align: middle;
+font-weight: bold;
+
+}
+
+.finder-texter {
+    color: rgb(191, 183, 183); /* Change to your desired color */
+    font-family: papyrus;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    
+    }
+
+.finder-texters {
+    color: rgb(0, 0, 0); /* Change to your desired color */
+    font-family: papyrus;
+    font-size: 4rem;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+        
+        }
+    
+.succmsg {
+    font-family:papyrus;
+    font-size: 2rem;
+    background-image: url('./assets/loginprompt.png'); /* Adjust path */
+    background-size: 6250px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-label{
+    font-family: papyrus;
+    font-size: 1rem;
+    color: black;
+}
+.loginform{
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    background-image: url('./assets/loginprompt.png'); /* Adjust path */
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.signupform {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    background-image: url('./assets/loginprompt.png'); /* Adjust path */
+    background-size: 625px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.loginform input, .signupform input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.loginform input[type="submit"], .signupform input[type="submit"] {
+    color: white;
+    background-color: #000000;
+}
+
+
+.loginform input[type="submit"]:hover,
+.signupform input[type="submit"]:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+/* Styles for feeds and comment section */
+.home {
+    text-align: center;
+
+}
+
+
+
+.apply-button{
+    background-color: #000000;
+    color:white
+}
+.crew-posting {
+    font-family: papyrus;
+    background-image: url('./assets/loginprompt.png');
+    background-size: cover; /* Or 'contain' based on your preference */
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 72%;  /* Adjust this value as needed */
+    margin: 0 auto;    /* Centers the narrowed content */
+    padding: 100px;     /* Adds padding on all sides for the text */
+    box-sizing: border-box; 
+    overflow-wrap: break-word; /* Ensures long words wrap onto the next line */
+    word-wrap: break-word; 
+    line-height: 1.5; 
+    margin-top: 20px;
+}
+
+
+
+/* Comment section styles */
+.commentsection {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+    width: 600px;
+}
+
+.viewpost img {
+    display: block;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.usercomment input[type="text"] {
+    margin-left: 20px;
+    width: 67%;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.usercomment input[type="submit"] {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4267B2;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.usercomment input[type="submit"]:hover {
+    background-color: #3b5998;
+}
+
+.comments .newcomment,
+.comments .oldcomment {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f2f5;
+}
+
+.comments .commenter {
+    margin-left: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.comments .comment {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.comments .date {
+    margin-left: 10px;
+    color: #888;
+    font-size: 12px;
+}
+
+/* Styles for create */
+
+.create-contents {
+    text-align: center;
+    padding-top: 30px;
+    
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.create-contents .create-caption textarea {
+    width: 60%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgba(255,255,255, 0.2);
+    z-index: 30;
+}
+
+.create-contents .create-caption input[type="file"] {
+    color: transparent;
+    background-color: rgba(255,255,255, 0.2);
+    z-index: 30;
+}
+
+.create-contents .create-caption input[type="file"]::-webkit-file-upload-button,
+.create-contents .create-caption button {
+    margin-left: 60px;
+    width: 150px;
+    color: rgb(0, 0, 0);
+    background-color: #4267B2;
+    padding: 15px 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255,255,255, 0.2);
+    margin-right: -50px !important; 
+    z-index: 30; 
+}
+.tag-input input {
+    margin-right: 10px; /* Adjust space as needed */
+}
+.create-contents .create-caption button {
+    margin: 0 auto;
+    background-color: rgba(255,255,255, 0.2);
+    z-index: 30;
+}
+
+.create-contents .create-caption input[type="file"]::-webkit-file-upload-button:hover,
+.create-contents .create-caption button:hover {
+    background-color: #353030;
+    cursor: pointer;
+    background-color: rgba(78, 63, 63, 0.2);
+    z-index: 30;
+}
+
+.create-contents .create-image img {
+    max-width: 400px;
+    padding-bottom: 20px;
+    margin: auto;
+    z-index: 30;
+}
+
+.box {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh; /* Makes it take the full height of the screen */
+    background-image: url('./assets/loginprompt.png'); /* Adjust path */
+    background-size: 160vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.create-caption input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: papyrus;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 3;
+}
+.create-crew-button {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34342f;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar label {
+    font-size: 24px;
+    
+    color: rgb(255, 255, 255);
+}
+
+.navbar .searchfeatures {
+    position: relative;
+    margin-right: auto;
+    margin-left: 16px;
+    flex: 0.28;
+}
+
+.navbar .searchfeatures input {
+    background-image: url('./assets/loginprompt.png'); /* Adjust path */
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+
+.navsearchresults {
+    text-align: left;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 107%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    max-height: 300px;
+    overflow-y: auto;
+    background-image: url('./assets/loginprompt.png'); /* Adjust path */
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: papyrus;
+}
+
+.navsearchresults .results {
+    padding: 10px;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.navsearchresults .results:hover {
+    background-color: #ffffff;
+}
+
+.navsearchresults .results:last-child {
+    border-bottom: none;
+}
+
+input[type='search']::placeholder {
+    color: #000000; /* Red placeholder for email input */
+    border: none;
+    font-family: papyrus;
+}
+
+.navbar button {
+    background-image: url('./assets/loginprompt.png'); /* Adjust path */
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: papyrus;
+    
+}
+
+.navbar button:last-child {
+    margin-right: 25px;
+}
+
+.navbar button:hover {
+    background-color: #3b5998;
+}
+
+/* Profile page styles */
+.profile-container {
+    text-align: center;
+    background-image: url('./assets/loginprompt.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Ensures the background covers the entire screen */
+}
+
+.profile-info {
+    font-family: 'Papyrus', sans-serif;
+    color: black;
+    max-width: 80%;  /* Adjust this as needed */
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 8px; /* Adds rounded corners */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.crews {
+    margin-top: 40px;
+}
+
+.crew-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for the crew items */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.crew-item button {
+    background-color: #000000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.crew-item button:hover {
+    background-color: #444444;
+}
+
+.edit-button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.edit-button:hover {
+    background-color: #444444;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+}
+
+.profile-details {
+    margin-bottom: 20px;
+}
+
+.profile-info h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.profile-info .info-row strong {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .profile-info {
+        max-width: 90%; /* More room on small screens */
+        padding: 20px;
+    }
+}
+
+
+/* Notification styles */
+.notifications-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notifications {
+    margin-top: 20px;
+}
+
+.notifications-heading {
+    font-family: papyrus;
+    font-size: 2rem;
+}
+
+.notification {
+    background-image: url('./assets/loginprompt.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    padding-left: 60px; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: papyrus;
+    font-size: 2rem;
+}
+
+
+
+
+/* Search Styles */
+.searchresults-container {
+    margin: 20px auto;
+    max-width: 520px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchmessage-heading {
+    font-size: 24px;
+}
+
+.user {
+    background-color: #f0f2f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.user:hover {
+    background-color: #e9ebee;
+    cursor: pointer;
+}
+
+
+.success_message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh;  /* Full height of the viewport */
+    text-align: center; /* Ensure text elements are centered */
+    font-family: papyrus;
+    font-size: 2rem;
+    margin-top: -50px !important;
+}
+
+
+
+/* Styling for EditProfile modal */
+.edit-profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Papyrus', sans-serif; /* Same font as profile */
+}
+
+h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-input {
+    margin-bottom: 15px;
+}
+
+.modal-input label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.modal-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.skills-input {
+    display: flex;
+    align-items: center;
+}
+
+.skills-input input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.skills-input button {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.skills-input button:hover {
+    background-color: #0056b3;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-actions button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.modal-actions button:first-child:hover {
+    background-color: #218838;
+}
+
+.modal-actions button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.modal-actions button:last-child:hover {
+    background-color: #c82333;
+}
